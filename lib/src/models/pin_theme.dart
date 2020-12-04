@@ -10,7 +10,7 @@ class PinTheme {
   /// Colors of the input fields which don't have inputs. Default is [Colors.red]
   final Color inactiveColor;
 
-  /// Colors of the input fields if the [PinCodeTextField] is disabled. Default is [Colors.grey]
+  /// Colors of the input fields if the [KeicyPinCodeTextField] is disabled. Default is [Colors.grey]
   final Color disabledColor;
 
   /// Colors of the input fields which have inputs. Default is [Colors.green]

@@ -14,7 +14,7 @@ void main() {
     final Widget app = Builder(
       builder: (context) => MaterialApp(
         home: Scaffold(
-          body: PinCodeTextField(
+          body: KeicyPinCodeTextField(
             appContext: context,
             length: 6,
             onChanged: (input) {},
@@ -49,7 +49,7 @@ void main() {
           home: Scaffold(
             backgroundColor: Colors.black,
             body: Builder(builder: (context) {
-              return PinCodeTextField(
+              return KeicyPinCodeTextField(
                 appContext: context,
                 autoFocus: true,
                 backgroundColor: Colors.transparent,

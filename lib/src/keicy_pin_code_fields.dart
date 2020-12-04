@@ -1,7 +1,7 @@
 part of keicy_pin_code_fields;
 
 /// Pin code text fields which automatically changes focus and validates
-class PinCodeTextField extends StatefulWidget {
+class KeicyPinCodeTextField extends StatefulWidget {
   /// The [BuildContext] of the application
   final BuildContext appContext;
 
@@ -116,7 +116,7 @@ class PinCodeTextField extends StatefulWidget {
   /// Default is false
   final bool autoValidate;
 
-  /// The vertical padding from the [PinCodeTextField] to the error text
+  /// The vertical padding from the [keicy_pin_code_fields] to the error text
   /// Default is 16.
   final double errorTextSpace;
 
@@ -127,7 +127,7 @@ class PinCodeTextField extends StatefulWidget {
   /// Error animation duration
   final int errorAnimationDuration;
 
-  PinCodeTextField({
+  KeicyPinCodeTextField({
     Key key,
     @required this.appContext,
     @required this.length,
@@ -178,7 +178,7 @@ class PinCodeTextField extends StatefulWidget {
   _PinCodeTextFieldState createState() => _PinCodeTextFieldState();
 }
 
-class _PinCodeTextFieldState extends State<PinCodeTextField> with SingleTickerProviderStateMixin {
+class _PinCodeTextFieldState extends State<KeicyPinCodeTextField> with SingleTickerProviderStateMixin {
   TextEditingController _textEditingController;
   FocusNode _focusNode;
   List<String> _inputList;
