@@ -1,0 +1,91 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter pub get
+
+## exception
+
+FileSystemException: FileSystemException: Cannot retrieve modification time, path = 'F:\2020\2020-09-17 mobile money transfer app\money_transfer_framework\lib\Widgets\pin_code_fields-5.2.0\example\pubspec.yaml' (OS Error: The system cannot find the file specified.
+, errno = 2)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:635:7)
+#1      _File.lastModifiedSync (dart:io/file_impl.dart:439:5)
+#2      ForwardingFile.lastModifiedSync (package:file/src/forwarding/forwarding_file.dart:55:43)
+#3      ForwardingFile.lastModifiedSync (package:file/src/forwarding/forwarding_file.dart:55:43)
+#4      _DefaultPub.get (package:flutter_tools/src/dart/pub.dart:236:21)
+#5      _rootRunUnary (dart:async/zone.dart:1198:47)
+#6      _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#7      _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#8      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#9      Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#10     Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#11     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:40:15)
+#12     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:311:13)
+#13     _DefaultPub.batch (package:flutter_tools/src/dart/pub.dart)
+#14     _rootRunUnary (dart:async/zone.dart:1198:47)
+#15     _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#16     _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#17     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#18     Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#19     Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#20     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:40:15)
+#21     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:311:13)
+#22     _DefaultProcessUtils.stream (package:flutter_tools/src/base/process.dart)
+#23     _rootRunUnary (dart:async/zone.dart:1198:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1100:19)
+#25     _FutureListener.handleValue (dart:async/future_impl.dart:143:18)
+#26     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:696:45)
+#27     Future._propagateToListeners (dart:async/future_impl.dart:725:32)
+#28     Future._completeWithValue (dart:async/future_impl.dart:529:5)
+#29     Future._asyncCompleteWithValue.<anonymous closure> (dart:async/future_impl.dart:567:7)
+#30     _rootRun (dart:async/zone.dart:1190:13)
+#31     _CustomZone.run (dart:async/zone.dart:1093:19)
+#32     _CustomZone.runGuarded (dart:async/zone.dart:997:7)
+#33     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1037:23)
+#34     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#35     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#36     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#37     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:169:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, 1.23.0-18.1.pre, on Microsoft Windows [Version 10.0.18362.1139], locale en-US)
+    • Flutter version 1.23.0-18.1.pre at D:\flutter
+    • Framework revision 198df796aa (6 days ago), 2020-10-15 12:04:33 -0700
+    • Engine revision 1d12d82d9c
+    • Dart version 2.11.0 (build 2.11.0-213.1.beta)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 30.0.2)
+    • Android SDK at D:\Android\Sdk
+    • Platform android-30, build-tools 30.0.2
+    • ANDROID_HOME = D:\Android\Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 4.0)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 50.0.1
+    • Dart plugin version 193.7547
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b01)
+
+[✓] VS Code, 64-bit edition (version 1.50.1)
+    • VS Code at C:\Program Files\Microsoft VS Code
+    • Flutter extension version 3.15.1
+
+[✓] Connected device (4 available)
+    • SM G8870 (mobile) • 314c93ad5e1d7ece • android-arm64  • Android 10 (API 29)
+    • Web Server (web)  • web-server       • web-javascript • Flutter Tools
+    • Chrome (web)      • chrome           • web-javascript • Google Chrome 86.0.4240.75
+    • Edge (web)        • edge             • web-javascript • Microsoft Edge 86.0.622.43
+
+• No issues found!
+```
