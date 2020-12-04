@@ -1,4 +1,4 @@
-part of pin_code_fields;
+part of keicy_pin_code_fields;
 
 /// Pin code text fields which automatically changes focus and validates
 class PinCodeTextField extends StatefulWidget {

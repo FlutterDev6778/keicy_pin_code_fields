@@ -3,15 +3,13 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:keicy_pin_code_fields/keicy_pin_code_fields.dart';
 
 void main() {
-  final TestWidgetsFlutterBinding binding =
-      TestWidgetsFlutterBinding.ensureInitialized();
+  final TestWidgetsFlutterBinding binding = TestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('disposes error stream', (WidgetTester tester) async {
-    final StreamController<ErrorAnimationType> controller =
-        StreamController<ErrorAnimationType>();
+    final StreamController<ErrorAnimationType> controller = StreamController<ErrorAnimationType>();
 
     final Widget app = Builder(
       builder: (context) => MaterialApp(

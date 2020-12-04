@@ -1,4 +1,4 @@
-part of pin_code_fields;
+part of keicy_pin_code_fields;
 
 class DialogConfig {
   /// title of the [AlertDialog] while pasting the code. Default to [Paste Code]
@@ -23,17 +23,10 @@ class DialogConfig {
     this.platform = Platform.other,
   });
 
-  factory DialogConfig(
-      {String affirmativeText,
-      String dialogContent,
-      String dialogTitle,
-      String negativeText,
-      Platform platform}) {
+  factory DialogConfig({String affirmativeText, String dialogContent, String dialogTitle, String negativeText, Platform platform}) {
     return DialogConfig._internal(
       affirmativeText: affirmativeText == null ? "Paste" : affirmativeText,
-      dialogContent: dialogContent == null
-          ? "Do you want to paste this code "
-          : dialogContent,
+      dialogContent: dialogContent == null ? "Do you want to paste this code " : dialogContent,
       dialogTitle: dialogTitle == null ? "Paste Code" : dialogTitle,
       negativeText: negativeText == null ? "Cancel" : negativeText,
       platform: platform == null ? Platform.other : platform,
