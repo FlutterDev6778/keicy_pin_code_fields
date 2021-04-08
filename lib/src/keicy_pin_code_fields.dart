@@ -166,7 +166,7 @@ class KeicyPinCodeTextField extends StatefulWidget {
     this.keyboardAppearance = Brightness.light,
     this.validator,
     this.onSaved,
-    this.readOnly,
+    this.readOnly = false,
     this.autoValidate = false,
     this.errorTextSpace = 16,
     this.enablePinAutofill = true,
